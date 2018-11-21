@@ -85,7 +85,9 @@ permalink: /
 </div>
 <div id="container"></div>
 <script src="https://cdn.staticfile.org/three.js/r83/three.min.js"></script>
-<script src="https://threejs.org/examples/js/Detector.js"></script>
+<!-- github commit: Refactored Detector.js into WebGL.jshttps://github.com/mrdoob/three.js/commit/e4063750a93a643fce333a17a06b6b5015d9dc99-->
+<!--<script src="https://threejs.org/examples/js/Detector.js"></script>-->
+<script src="https://threejs.org/examples/js/WebGL.js"></script>
 
 <script id="vertexShader" type="x-shader/x-vertex">
   precision highp float;
@@ -123,7 +125,7 @@ permalink: /
 </script>
 
 <script>
-  if (!Detector.webgl) Detector.addGetWebGLMessage();
+  // if (!Detector.webgl) Detector.addGetWebGLMessage();
   var mouseX = 0,
     mouseY = 0;
   var windowHalfX = window.innerWidth / 2;
